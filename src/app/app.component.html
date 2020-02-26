@@ -1,0 +1,41 @@
+<ion-app>
+
+  <ion-menu side="start" menuId="first" contentId="principal">
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>{{ "menu.menu" | translate }}</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+
+        <ion-item>
+          <ion-icon slot="start" name="moon"></ion-icon>
+          <ion-label>Dark</ion-label>
+          <ion-toggle slot="end"
+            (ionChange)="changeDark()"></ion-toggle>
+        </ion-item>
+
+        <ion-item>{{ "menu.languages" | translate }}:</ion-item>
+
+        <ion-item>
+          <ion-segment (ionChange)="segmentChanged($event)">
+            <ion-segment-button value="spanish">
+              <ion-label>{{ "menu.spanish" | translate }}</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="english">
+              <ion-label>{{ "menu.english" | translate }}</ion-label>
+            </ion-segment-button>
+          </ion-segment>
+        </ion-item>
+
+        <ion-item *ngIf="auth.isAuthenticated()">
+          <ion-button (click)="auth.logout()">{{ "login.logout" | translate }}</ion-button>
+        </ion-item>
+
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <ion-router-outlet id="principal"></ion-router-outlet>
+</ion-app>

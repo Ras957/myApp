@@ -1,0 +1,31 @@
+{
+    "new":{
+        "new":"New  incidence"
+    },
+
+    "login":{
+        "login":"Login",
+        "log":"Login",
+        "logout":"Logout",
+        "new":"New",
+        "email":"Email",
+        "password":"Password",
+        "register":"Register",
+        "check":"Check in"
+    },
+
+    "menu":{
+        "menu":"Main Menu",
+        "languages":"Languages",
+        "spanish":"Spanish",
+        "english":"English"
+    },
+
+    "tab1":{
+        "reports":"My reports"
+    },
+
+    "tab2":{
+        "map":"Map"
+    }
+}

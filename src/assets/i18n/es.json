@@ -1,0 +1,31 @@
+{
+    "new":{
+        "new":"Nueva incidencia"
+    },
+
+    "login":{
+        "login":"Inicio de sesión",
+        "log":"Iniciar sesión",
+        "logout":"Cerrar sesion",
+        "new":"Nuevo",
+        "email":"Correo electrónico",
+        "password":"Contraseña",
+        "register":"Registro",
+        "check":"Registrarse"
+    },
+
+    "menu":{
+        "menu":"Menú Principal",
+        "languages":"Idiomas",
+        "spanish":"Español",
+        "english":"Inglés"
+    },
+
+    "tab1":{
+        "reports":"Mis reportes"
+    },
+
+    "tab2":{
+        "map":"Mapa"
+    }
+}
